@@ -1,16 +1,16 @@
-# my_weather_app_v2
+# Weather App
 
-A new Flutter project.
+A real-time weather application built with Flutter.
 
-## Getting Started
+## Features
+* Checks current weather for any city.
+* Shows temperature, humidity, and wind speed.
+* Clean and responsive UI.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0a1348a7-4400-475e-a4a5-a53ef861d066" width="200" />
+  <img src="https://github.com/user-attachments/assets/6a546c36-ea18-492a-8b1d-28174bce0020" width="200" />
+  <img src="https://github.com/user-attachments/assets/dd9c3f80-9473-441a-9b0d-3322e077ea01" width="200" />
+  <img src="https://github.com/user-attachments/assets/02cecec8-40a0-4f9e-96ce-378eccb96407" width="200" />
+</p>
