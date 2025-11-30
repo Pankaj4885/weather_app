@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'pages/weather_page.dart';
+import 'package:provider/provider.dart';
+import 'package:my_weather_app_v2/providers/weather_provider.dart';
+import 'package:my_weather_app_v2/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,12 +10,22 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: WeatherPage(),
+    return MultiProvider(
+      providers: [
+        // This initializes the WeatherProvider when the app starts
+        ChangeNotifierProvider(create: (_) => WeatherProvider()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Weather App',
+        theme: ThemeData(
+          useMaterial3: true,
+          primarySwatch: Colors.blue,
+        ),
+        home: const HomeScreen(),
+      ),
     );
   }
 }
